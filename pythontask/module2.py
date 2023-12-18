@@ -45,38 +45,31 @@
 # my_list[-1] = my_list_first
 # print(my_list)
 
-
-meal_list_lunch_dinner = {
-247:'Burger King Hamburger',
-300:'McDonalds Cheesy',
-282:'Subway BLT',
-300:'Small Steak',
-543:'Medium Steak',
-724:'Large Steak',
-851:'Mac&Cheese large serving',
-556:'Mac&Cheese medium serving',
-298:'Mac&Cheese small serving',
-183:'Greek salad',
-370:'Caesar salad',
-204:'Tuna salad'
-}
-
-meal_list_breakfast = {
-333:'Medium serving of greek yogurt',    
-190:'Plain croissant',
-341:'Starbucks almond croissant',
-162:'Peanut butter toast',
-159:'Chocolate spread toast'
-}
-
 cal_input = int(input())
 menu = [
-    {"name":"Small serving of oats with milk", "cals": 400},
+    {"name":"Small serving of oats with milk", "cals": 400,"type": "breakfast"},
     {"name":"Medium serving of oats with milk", "cals": 800},
-    {"name":"Small serving of greek yogurt", "cals": 166}
+    {"name":"Chocolate spread toast", "cals": 159,"type": "breakfast"},
+    {"name":"Peanut butter toast", "cals": 162,"type": "breakfast"},
+    {"name":"Starbucks almond croissant", "cals": 341,"type": "breakfast"},
+    {"name":"Plain croissant", "cals": 190,"type": "breakfast"},
+    {"name":"Tuna salad'", "cals": 204},
+    {"name":"Caesar salad", "cals": 370},
+    {"name":"Greek salad", "cals": 183},
+    {"name":"Mac&Cheese medium serving", "cals": 556},
+    {"name":"Mac&Cheese large serving", "cals": 851},
+    {"name":"Large Steak", "cals": 724},
+    {"name":"Medium Steak", "cals": 543},
+    {"name":"Small Steak'", "cals": 300},
+    {"name":"Subway BLT", "cals": 282},
+    {"name":"Burger King Hamburger", "cals": 247},
+    {"name":"McDonalds Cheesy", "cals": 300},
 ]
 
 for i in menu:
     if i['cals']<cal_input:
         print(i["name"])
+
+
+
 
